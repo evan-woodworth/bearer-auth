@@ -1,6 +1,7 @@
 'use strict';
 
-process.env.SECRET = "toes";
+require('dotenv');
+const SECRET = process.env.SECRET;
 
 const supertest = require('supertest');
 const server = require('../../../src/server.js').server;
